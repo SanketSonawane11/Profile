@@ -10,7 +10,7 @@
     background: transparent;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .mainBody
@@ -46,16 +46,6 @@
     font-size: 4.5vw;
 }
 
-.firstInfo
-{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .greet
 {
     width: 85vw;
@@ -67,11 +57,18 @@
     justify-content: space-evenly;
 }
 
+.firstInfo
+{
+    width: 98vw;
+    height: 100vh;
+}
+
+
 /* Navbar ------------------- */
 
 .navbarMain
 {
-    width: 100vw;
+    width: 98vw;
     height: 5vw;
     background-color: transparent;
     text-align: center;
@@ -84,9 +81,11 @@
 .navbar
 {
     width: 70vw;
-    height: 100vh;
+    height: 6vw;
     color: #000221;
     font-size: 2vw;
+    z-index: 5;
+    position: fixed;
 }
 
 .navbarLinks
