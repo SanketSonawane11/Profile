@@ -37,10 +37,12 @@
 {
     font-size: 6vw;
     width: 100vw;
+    /* height: 6vw; */
     text-align: center;
 }
 
 .subText
 {
     font-size: 4.5vw;
+    /* height: 4.5vw; */
 }
