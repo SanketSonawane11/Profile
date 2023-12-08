@@ -12,37 +12,35 @@
     padding: 0;
 }
 
+.mainBody
+{
+    background-color: #fbecda;
+}
+
 .main
 {
     width: 100vw;
-    height: auto;
-    background-color: #dfdfdf;
-}
-
-.pageOne
-{
-    width: 100vw;
     height: 100vh;
-
-}
-
-.nameText, .subtext
-{
-    font-size: 4vw;
-    height: 100vh;
-    width: 40vw;
-    margin: 0 10vw;
-    background-color: transparent;
-    float: left;
+    font-family: 'Poppins';
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background-color:#000221;
+    color: #fbecda;
+    position: fixed;
+    z-index: 2;
 }
 
-.mainText
+.name
 {
-    background-color: #ffe39b;
-    border-radius: 1.5vw;
-    padding: 2vw;
-    margin: 0 1vw;
+    font-size: 6vw;
+    width: 100vw;
+    text-align: center;
+}
+
+.subText
+{
+    font-size: 4.5vw;
 }
