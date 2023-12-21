@@ -6,15 +6,38 @@ function Greeting() {
 
     useEffect(() => {
 
-            gsap.from(".name", {duration: 1, opacity: 0, y: '-100%' })
+            gsap.from(".name", {
+              duration: 1, 
+              opacity: 0, 
+              y: '-100%' 
+            })
       
-            gsap.to('.name', {duration: 1, opacity: 1, y: 0, ease: "back.out(1.7)" })
+            gsap.to('.name', {
+              duration: 1, 
+              opacity: 1, 
+              y: 0, 
+              ease: "back.out(1.7)" 
+            })
       
-            gsap.from(".subText", {duration: 1, opacity: 0, y: '-100%'})
+            gsap.from(".subText", {
+              duration: 1, 
+              opacity: 0, 
+              y: '-100%'
+            })
       
-            gsap.to('.subText', {duration: 1, opacity: 1, y: 0, ease: "back.out(1.7)"})
+            gsap.to('.subText', {
+              duration: 1, 
+              opacity: 1, 
+              y: 0, 
+              ease: "back.out(1.7)"
+            })
       
             // English text
+
+            gsap.to('.greet',{
+              opacity: 1,
+              duration: 0.1
+            })
       
             gsap.from(".english", {
               duration: 0.5,

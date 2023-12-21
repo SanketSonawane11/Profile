@@ -39,11 +39,13 @@
     font-size: 6vw;
     width: 100vw;
     text-align: center;
+    opacity: 0;
 }
 
 .subText
 {
     font-size: 4.5vw;
+    opacity: 0;
 }
 
 .greet
@@ -55,6 +57,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    opacity: 0;
 }
 
 .firstInfo
