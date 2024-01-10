@@ -142,6 +142,7 @@
 {
     scale: 1.01;
     box-shadow: 0 0 15px 0px #2a2a2a;
+    border-radius: 5vw;
 }
 
 .about
