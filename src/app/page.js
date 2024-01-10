@@ -3,14 +3,15 @@
 import React, { useEffect, useState } from 'react'
 import gsap from 'gsap';
 import Greeting from './Components/Greeting';
+import Hero from './Components/Hero';
 
 
 
 function About() {
 
-  const scrollTo = (tag) =>
+  const scrollTo = (section) =>
   {
-    const element = document.querySelector(tag);  //ekch function banav and tyala constant madhye store krun 'About' chya jagewr thev
+    const element = document.querySelector(section);  //ekch function banav and tyala constant madhye store krun 'About' chya jagewr thev
     element.scrollIntoView({ behavior: 'smooth'});
   };
 
@@ -22,53 +23,57 @@ function About() {
      
       <div className='mainBody'>
 
-        <Greeting/>
+        {/* <Greeting/> */}
 
-        <div className='firstInfo'>
+        <div className='firstDisplay'>
 
-        <div className='navbarMain'>
-    
-          <div className='navbar'>
+          <div className='firstInfo'>
 
-            <ul className='navbarLinks'>
+            <div className='navbarMain'>
+        
+              <div className='navbar'>
 
-              <li onClick={()=>
-              {
-                scrollTo('.about')
-              }}>About</li>
+                <ul className='navbarLinks'>
 
-              <li onClick={()=>{
-                scrollTo('.techStack')
-              }}>Tech Stack</li>
+                  <li onClick={()=>
+                  {
+                    scrollTo('.about')
+                  }}>About</li>
+
+                  <li onClick={()=>{
+                    scrollTo('.techStack')
+                  }}>Tech Stack</li>
 
 
-              <li onClick={()=>{
-                scrollTo('.projects')
-              }}>Projects</li>
+                  <li onClick={()=>{
+                    scrollTo('.projects')
+                  }}>Projects</li>
 
-              <li onClick={()=>{
-                scrollTo('.achievements')
-              }}>Achievements</li>
+                  <li onClick={()=>{
+                    scrollTo('.achievements')
+                  }}>Achievements</li>
 
-              <li onClick={()=>{
-                scrollTo('.contact')
-              }}>Contact</li>
+                  <li onClick={()=>{
+                    scrollTo('.contact')
+                  }}>Contact</li>
 
-            </ul>
+                </ul>
+
+              </div>
+            
+            </div>
+
+            <Hero />
 
           </div>
-        
-        </div>
-
-        </div>
-
-        <div className='about'>
+          
+          <div className='about'>
 
           Arrived?
 
+          </div>
+
         </div>
-
-
       </div>
     
   )

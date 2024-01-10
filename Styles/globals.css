@@ -16,11 +16,12 @@
 .mainBody
 {
     background-color: #faf0e4;
+    scrollbar-width: none;
 }
 
 .main
 {
-    width: 100vw;
+    width: fit-content;
     height: 100vh;
     font-family: 'Poppins';
     text-align: center;
@@ -60,9 +61,18 @@
     opacity: 0;
 }
 
+.firstDisplay
+{
+    width: 200vw;
+    height: 100vh;
+    background-color: #faf0e4;
+    display: flex;
+    align-items: center;
+}
+
 .firstInfo
 {
-    width: 98vw;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -87,8 +97,8 @@
     height: 6vw;
     color: #000221;
     font-size: 2vw;
-    z-index: 5;
-    position: fixed;
+    z-index: 0;
+    position: sticky;
 }
 
 .navbarLinks
@@ -100,12 +110,30 @@
     flex-direction: row;
 }
 
+.heroMain
+{
+    padding: 2vw 1vw;
+    width: 95vw;
+    height: 90vh;
+    transition: all 0.2s ease-out;
+}
+
+.heroImage
+{
+    width: 40vw;
+    height: 40vw;
+    border-radius: 20vw 10vw 30vw 22vw;
+    background: url('/Mee1.jpg') no-repeat center;
+    background-size: cover;
+}
+
 .about
 {
-    width: 10vw;
+    width: 100vw;
     height: 100vh;
     font-size: 5vw;
     color: #000221;
+    /* background-color: #faf0e4; */
 }
 
 /*---------------------------- Extrass ---------------------------------*/
@@ -113,4 +141,14 @@
 ::selection
 {
     color: #008cff;
+}
+
+::-webkit-scrollbar
+{
+    width: 0vw;
+}
+
+::-webkit-scrollbar-horizontal
+{
+    width: 0vw;
 }
