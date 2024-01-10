@@ -39,8 +39,8 @@ function About() {
     {
         const { clientX, clientY } = event;
         const {width, height, left, top} = ref.current.getBoundingClientRect();
-        const x = clientX - left - width/10;
-        const y = clientY - top - height/10;
+        const x = (clientX - left - width/4)/3;
+        const y = (clientY - top - height/4)/3;
         xD(x);
         yD(y);
     }
