@@ -77,7 +77,7 @@ function About() {
      
       <div className='mainBody'>
 
-        {/* <Greeting/>  */}
+        <Greeting/> 
 
         <div className='firstDisplay'>
 
