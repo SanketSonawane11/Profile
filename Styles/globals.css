@@ -1,172 +1,199 @@
-@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Alef:wght@400;700&family=Kalnia:wght@100;200;300;400;500;600;700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+Hanunoo&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Alef:wght@400;700&family=Kalnia:wght@100;200;300;400;500;600;700&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Noto+Sans+Hanunoo&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*
-{
-    background: transparent;
-    margin: 0;
-    padding: 0;
-    scroll-padding-top: 5vw;
-    /* box-sizing: border-box; */
+* {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  /* scroll-padding-top: 5vw; */
+  /* box-sizing: border-box; */
 }
 
-.mainBody
-{
-    background-color: #faf0e4;
-    scrollbar-width: none;
-    font-family: 'Nunito';
-    scroll-behavior: smooth;
+.mainBody {
+  background-color: #fcf9f5;
+  scrollbar-width: none;
+  font-family: "Nunito";
+  scroll-behavior: smooth;
 }
 
-.main
-{
-    width: fit-content;
-    height: 100vh;
-    /* font-family: 'Poppins'; */
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color:#000221;
-    color: #fbecda;
-    position: fixed;
-    z-index: 2;
+.main {
+  width: fit-content;
+  height: 100vh;
+  /* font-family: 'Poppins'; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000221;
+  color: #fcf9f5;
+  position: fixed;
+  z-index: 1;
 }
 
-.name
-{
-    font-size: 6vw;
-    width: 100vw;
-    text-align: center;
-    opacity: 0;
+.name {
+  font-size: 6vw;
+  width: 100vw;
+  text-align: center;
+  opacity: 0;
 }
 
-.subText
-{
-    font-size: 4.5vw;
-    opacity: 0;
+.subText {
+  font-size: 4.5vw;
+  opacity: 0;
 }
 
-.greet
-{
-    width: 85vw;
-    height: 4vw;
-    margin: 1.5vw;
-    font-size: 2vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    opacity: 0;
+.greet {
+  width: 85vw;
+  height: 4vw;
+  margin: 1.5vw;
+  font-size: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  opacity: 0;
 }
 
-.firstDisplay
-{
-    width: 200vw;
-    height: 100vh;
-    background-color: #faf0e4;
-    display: flex;
-    align-items: center;
+.firstDisplay {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fcf9f5;
+  /* display: flex;
+  align-items: center; */
 }
 
-.firstInfo
-{
-    width: 100vw;
-    height: 100vh;
+.firstInfo {
+  width: 100vw;
+  height: 100vh;
 }
-
 
 /* Navbar ------------------- */
 
-.navbarMain
-{
-    width: 98vw;
-    height: 5vw;
-    background-color: transparent;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.navbarMain {
+  width: 100%;
+  height: 5vw;
+  background-color: transparent;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar
-{
-    width: 70vw;
-    height: 6vw;
-    color: #000221;
-    font-size: 2vw;
-    z-index: 0;
-    position: sticky;
+.navbar {
+  width: 80vw;
+  height: 7vw;
+  color: #000221;
+  font-size: 1.6vw;
+  z-index: 0;
+  position: sticky;
+  top: 1vw;
+  background-color: aliceblue;
+  border-radius: 1vw;
+  margin: 10vw;
+  border: 2px solid #000221;
 }
 
-.navbarLinks
-{
-    margin: 2vw;
-    font-weight: 700;
-    display: flex; 
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    transition: all .2s ease-out;
+.navbarLinks {
+  margin: 1vw;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  transition: all 0.2s ease-out;
 }
 
-.navbarLinks li:hover
-{
-    font-size: 2.2vw;
+.navbarLinks li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  padding: 0.2vw 0.7vw;
+  transition: all 0.2s ease-out;
+  border-radius: 0.5vw;
+  opacity: 0.8;
 }
 
-.heroMain
-{
-    padding: 2vw 1vw;
-    width: 40vw;
-    height: 40vh;
-    transition: all 0.2s ease-out;
+.navbarLinks li p {
+  margin: 0 1.3vw 0 0;
+  transition: all 0.1s ease-out;
 }
 
-.heroImage
-{
-    width: 40vw;
-    height: 40vw;
-    border-radius: 20vw 7vw 25vw 22vw;
-    background: url('/Mee1.jpg') no-repeat center;
-    background-size: cover;
-    transition: all 0.2s ease-out;
+.navbarLinks li:hover {
+  font-size: 1.85vw;
+  color: aliceblue;
+  background-color: #2a2a2a;
+  opacity: 1;
 }
 
-.heroImage:hover
-{
-    scale: 1.01;
-    box-shadow: 0 0 15px 0px #2a2a2a;
-    border-radius: 5vw;
+.heroMain {
+  padding: 2vw 1vw;
+  width: 40vw;
+  height: 40vh;
+  transition: all 0.2s ease-out;
 }
 
-.about
-{
-    width: 100vw;
-    height: 100vh;
-    font-size: 5vw;
-    color: #000221;
-    /* background-color: #faf0e4; */
+.heroImage {
+  width: 30vw;
+  height: 30vw;
+  /* margin: ; */
+  border-radius: 20vw 7vw 25vw 22vw;
+  background: url("/Mee.jpg") no-repeat center;
+  background-size: cover;
+  transition: all 0.2s ease-out;
+  z-index: 1;
 }
 
+.heroImage:hover {
+  scale: 1.01;
+  box-shadow: 0 0 15px 0px #2a2a2a;
+  border-radius: 5vw;
+  background: url("/Mee1.jpg") center no-repeat;
+  background-size: cover;
+}
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  font-size: 5vw;
+  color: #000221;
+  /* background-color: #faf0e4; */
+}
+
+.hero-waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.hero-waves svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 48px;
+}
+
+.hero-waves .shape-fill {
+  fill: #ffffff;
+}
 /*---------------------------- Extrass ---------------------------------*/
 
-::selection
-{
-    color: #008cff;
+::selection {
+  color: #008cff;
 }
 
-::-webkit-scrollbar
-{
-    width: 0vw;
+::-webkit-scrollbar {
+  width: 0vw;
 }
 
-::-webkit-scrollbar-horizontal
-{
-    width: 0vw;
+::-webkit-scrollbar-horizontal {
+  width: 0vw;
 }
