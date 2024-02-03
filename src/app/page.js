@@ -15,7 +15,7 @@ function About() {
   return (
 
     <div className='mainBody'>
-      <Greeting/> 
+      {/* <Greeting/>  */}
       <Navbar />
       <div className='firstDisplay'>
         <div className='firstInfo'>
