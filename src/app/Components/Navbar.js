@@ -69,8 +69,6 @@ function Navbar() {
     return (
         <div className='navbarMain'>
 
-            <div className='navbar'>
-
                 <ul className='navbarLinks'>
 
                     <li ref={aboutRef} onClick={() => {
@@ -101,8 +99,6 @@ function Navbar() {
                     </li>
 
                 </ul>
-
-            </div>
 
         </div>
     )

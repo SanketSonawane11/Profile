@@ -10,33 +10,23 @@ import Navbar from './Components/Navbar';
 
 
 function About() {
-  
+
 
   return (
-     
-      <div className='mainBody'>
 
-        {/* <Greeting/>  */}
-
-        <div className='firstDisplay'>
-
-          <div className='firstInfo'>
-
-            <Navbar/>
-
-            <Hero />
-
-          </div>
-          
-          <div className='about'>
-
+    <div className='mainBody'>
+      <Greeting/> 
+      <Navbar />
+      <div className='firstDisplay'>
+        <div className='firstInfo'>
+          <Hero />
+        </div>
+        <div className='about'>
           Arrived?
-
-          </div>
-
         </div>
       </div>
-    
+    </div>
+
   )
 }
 

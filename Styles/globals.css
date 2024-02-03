@@ -58,7 +58,7 @@
 }
 
 .firstDisplay {
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
   background-color: #fcf9f5;
   /* display: flex;
@@ -66,53 +66,50 @@
 }
 
 .firstInfo {
-  width: 100vw;
+  width: 90vw;
   height: 100vh;
 }
 
 /* Navbar ------------------- */
 
-.navbarMain {
-  width: 100%;
-  height: 5vw;
-  background-color: transparent;
-  text-align: center;
+.navbarMain{
+  width: 13.5%;
+  height: 85%;
+  position: fixed;
+  top: 0;
+  left: -10.8%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: all .2s ease-out;
 }
 
-.navbar {
-  width: 80vw;
-  height: 7vw;
-  color: #000221;
-  font-size: 1.6vw;
-  z-index: 0;
-  position: sticky;
-  top: 1vw;
-  background-color: aliceblue;
-  border-radius: 1vw;
-  margin: 10vw;
-  border: 2px solid #000221;
+.navbarMain:hover{
+  left: 0;
 }
 
 .navbarLinks {
-  margin: 1vw;
+  width: 110%;
   font-weight: 700;
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
-  flex-direction: row;
+  align-items: end;
+  flex-direction: column;
   transition: all 0.2s ease-out;
+  border: 3px solid #2a2a2a;
+  border-left-width: 0;
+  border-radius: 0 2vw 2vw 0;
 }
 
 .navbarLinks li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 1.3vw;
+  text-align: end;
   width: fit-content;
   padding: 0.2vw 0.7vw;
+  margin: 1vw 0;
   transition: all 0.2s ease-out;
   border-radius: 0.5vw;
   opacity: 0.8;
@@ -124,50 +121,17 @@
 }
 
 .navbarLinks li:hover {
-  font-size: 1.85vw;
+  font-size: 1.6vw;
   color: aliceblue;
   background-color: #2a2a2a;
   opacity: 1;
-}
+}  
 
-.heroMain {
-  padding: 2vw 1vw;
-  width: 40vw;
-  height: 40vh;
-  transition: all 0.2s ease-out;
-}
-
-.heroImage {
-  width: 30vw;
-  height: 30vw;
-  /* margin: ; */
-  border-radius: 20vw 7vw 25vw 22vw;
-  background: url("/Mee.jpg") no-repeat center;
-  background-size: cover;
-  transition: all 0.2s ease-out;
-  z-index: 1;
-}
-
-.heroImage:hover {
-  scale: 1.01;
-  box-shadow: 0 0 15px 0px #2a2a2a;
-  border-radius: 5vw;
-  background: url("/Mee1.jpg") center no-repeat;
-  background-size: cover;
-}
-
-.about {
-  width: 100vw;
-  height: 100vh;
-  font-size: 5vw;
-  color: #000221;
-  /* background-color: #faf0e4; */
-}
 
 .hero-waves {
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
